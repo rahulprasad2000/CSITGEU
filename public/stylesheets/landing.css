@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+	background-color: #000;
+}
+
+/* div.gallery {
+  border: 1px solid #ccc;
+} */
+.gallery
+{
+  padding-top:10px;
+	text-align:center;
+	z-index:1;
+	position:relative;
+}
+div.gallery img:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+
+.vission
+{
+  padding-top:80px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background:url("https://i.pinimg.com/originals/22/08/bb/2208bb79555c0e3b20aec9e793128079.jpg");
+  background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
+}
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+	font-weight: bold;
+  color: #000000;
+}
+
+.about
+{
+	 padding-top:50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background:url("https://i.pinimg.com/originals/22/08/bb/2208bb79555c0e3b20aec9e793128079.jpg");
+  background-size: cover;
+  background-position: center;
+	background-size: 100% 100%;
+}
+
+.contact
+{
+  padding-top:10px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background:url("https://i.pinimg.com/originals/22/08/bb/2208bb79555c0e3b20aec9e793128079.jpg");
+  background-size: cover;
+  background-position: center;
+	background-size: 100% 100%;
+}
+	
+}
+.line
+{
+	color:black;
+}
+.login
+{
+	z-index: 1;
+	width:30%; 
+	margin:25px auto;
+	padding-top: 20vh;
+	background-blend-mode:normal;
+}
+
+.signup{
+	z-index: 1;
+	width:30%; 
+	margin:25px auto;
+	padding-top: 20vh;
+	background-blend-mode:normal;
+}
+
+.navbar{
+	background-blend-mode:normal;
+	z-index:1;
+}
+
+
+
+.jumbotron
+{
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  background-image:url("https://www.geu.ac.in/content/dam/geu/Image-Galleries/HeaderFiles/aerial-view-geu1.jpg");
+	opacity:0.9;
+}
+
+/* hr
+{
+	border: 1px solid grey;
+	z-index:1;
+} */
+div .timetable p {
+  background-color: #ffffff;
+  opacity: 1px;
+	z-index:1;
+	  font-weight: bold;
+	 margin: 10px;
+}
+ul.no-bullets {
+  list-style-type: none;
+}
+
+.app{
+	z-index:1;
+	width:30%;
+}
+.slideshow { 
+	position:fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+	z-index:0;
+}
+ 
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+
+  
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://www.jagranjosh.com/imported/images/E/Articles/Graphic-Era-University-in-the-Top-100-Universities-of-the-Nation-Body-Images.webp) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://i.pinimg.com/originals/22/08/bb/2208bb79555c0e3b20aec9e793128079.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://www.collegebatch.com/static/clg-gallery/graphic-era-university-school-of-engineering-technology-dehradun-130863.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://www.collegebatch.com/static/clg-gallery/graphic-era-university-school-of-engineering-technology-dehradun-130866.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://eedgeu.files.wordpress.com/2017/07/cropped-main-building-11.jpg);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+} 
+
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
